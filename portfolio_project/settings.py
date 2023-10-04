@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
-from portfolio_project.custom_settings import *
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -24,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@n36er!^rnnjauxnx3d3qiv9()@-6p4c3xe_*!#e0g7d!%c8$0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = CustomDebug
+DEBUG = False
 
 ALLOWED_HOSTS = ["*", "https://artheverywhere.pythonanywhere.com", "artheverywhere.pythonanywhere.com"]
 
